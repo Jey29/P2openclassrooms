@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    max-width: 87.5em;
+    max-width: 1400px;
     margin: 0;  
     padding: 0;      
     font-family: 'Raleway', sans-serif; 
@@ -30,57 +30,52 @@ h3 {
     font-size: 16px;
     margin-top: 4px;
     margin-bottom: 9px;
-    line-height: 19px;
+    line-height: 19px;    
 }
-
 
 /* ////////////////////////////////Logo+menu///////////////////////// */
-section {
-    height: auto;
+nav {
+    width: 100%;
+    height: 126px;
     margin-left: 55px;
-    margin-right: 77px;
-}
-section .container{
-    max-width: 1400px;
-    margin: 0 auto;    
-}
-section .container header {
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     justify-content: space-between;
-
 }
-section .container .left {
-    margin-top: 44px;   
-    margin-bottom: 63px; 
+#logo {
+    margin-top: 44px;
+    height: 19px;
+    width: 61px;
 }
-section .container nav {
+.right {        
+    width: 19%;
+    height: 126px;
     display: flex;
-    flex-direction: row;  
-    height: 100%;        
+    justify-content: space-around;
+    align-items: center;
 }
-section .container nav a {
-    text-decoration: none;
+.right a {
     color: black;
-    margin-left: 67px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;  
-    margin-top: 48px ;  
 }
-section .container nav a:hover {
+#lienheb, #lienact {
+    text-decoration: none;
+}
+.right a:visited {
+    text-decoration: none;
+}
+.right a:hover{     
     color:#0065FC ;
-    border-top: 2px solid #0065fc;   
+    border-top: 2px solid #0065fc;  
 }
 /* ////////////////////////////////Searchbar////////////////////// */
 .phrase1{
     margin-bottom: 8px;
-
+    margin-left: 55px;
 }
 .phrase2 {
     font-weight: 400;
     font-size: 16px;    
     margin-bottom: 20px;
+    margin-left: 55px;
     height: 19px;
     width: 296px;
 }
@@ -90,6 +85,7 @@ section .container nav a:hover {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 46px;
+    margin-left: 55px;
 }
 .vector {
     background-color: #F2F2F2;
@@ -129,17 +125,19 @@ button {
 }
 /* ////////////////////////////////Filtres//////////////////////////// */
 .filtres {    
-    width: 914px;
+    width: 100%;
     height: 50px;
     margin-bottom: 38px;
+    margin-left: 62px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .boutonfiltres{
+    width: 60%;
+    margin-right: 464px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;    
 }
 .filtres button {
     width: auto;
@@ -151,19 +149,22 @@ button {
     text-align: start; 
     font-size: 17px;     
 }
-.filtres h3 {
-    margin: 0;
+.filtres h3 {    
     width: 54px; 
     height: 21px;   
 }
 b {
     color: black;
 }
+.filtres button:hover {
+    background-color: #DEEBFF;
+}
 /* ////////////////////////////////info///////////////////////////// */
 .info{
     display: flex;
     align-items: center;
     margin-bottom: 37px;
+    margin-left: 59px;
 }
 .logoinfo{
     display: flex;
@@ -180,67 +181,72 @@ b {
     height: 10px;
 }
 /* ////////////////////////////////hebergements////////////////// */
+main {
+    margin-left: 50px;
+}
 .containerhebergement {
     background-color: #F2F2F2 ; 
     border-radius: 20px;
-    width: 880px;
-    height: 626px;  
-    padding:  0;
-    margin: 0;
+    width: 62.85%;
+    height: 626px;
 }
-.box {
+.containerhebergement h2 {
+    padding-left: 40px;    
+    padding-top: 42px;
+}
+.cards {
     margin: 23px 40px 40px 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;   
     
 }
-.box1, .box2, .box3, .box4, .box5, .box6{      
+.cards1, .cards2, .cards3, .cards4, .cards5, .cards6{      
     background: #ffffff;
     border-radius: 20px;
     height: 199px;
     width: 246px;
     margin-bottom: 30px;
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
-.box .photo {
-    
+.cards .photo {
+    width: 100%;
+    height: 124px;
 }
-.box .photo img {
-    height: 114px;
-    width: 236px;
+.cards .photo img {
+    height: 100%;
+    width: 100%;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
-.box h3 {
+.cards h3 {
     margin-left: 16px;
 }
-.containerhebergement .box p {
+.containerhebergement .cards p {
     width: 204px;
     height: 15px;
     font-weight: 400;
     margin-left: 16px;
 }
-.box .stars{
+.starsheb {
+    height: 12px;
+    padding-left: 16px;
     margin-top: 9px;
-    margin-right: 2px;
-    margin-left: 16px;
     display: flex;
-    align-items: center;
-}
-.containerhebergement h2 {
-    padding-left: 40px;    
-    padding-top: 42px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .plus {
     font-weight: 700;
     width: 107px;
     height: 21px;
     margin-left: 44px;
-    margin-bottom: 46px;    
+    margin-bottom: 46px;
+    margin-top: 10px;  
 }
 /* ////////////////////////Les plus populaires/////////////// */
-.hebpop{
+#hebpop{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -248,22 +254,22 @@ b {
 .populaires {
     background-color: #F2F2F2 ; 
     border-radius: 20px;
-    width: 420px;
+    width: 30%;
     height: 625px;  
-    padding:  0;
-    margin-right: 50px;    
 }
 .populaires h2{
     margin: 41px 96px 0px 37px;
+    width: 205px;
+    size: 22px;
 }
-.boxpop {    
+.cardspop {    
     display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	padding: 26px 40px 34px 37px;
 }
-.boxpop1, .boxpop2, .boxpop3 {
-    width: 343px;
+.cardspop1, .cardspop2, .cardspop3 {
+    width: 100%;
     height: 144px;
     margin-bottom: 33px;
     border-radius: 20px;
@@ -271,31 +277,41 @@ b {
     box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
     display: flex;
 	flex-direction: row;
-
 }
-.populaires .boxpop img {
-    height: 144px;
+
+.populaires .cardspop img {
+    height: 100%;
     width: 137px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
 }
 .rightpics{
     height: 100%;
+    width: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+.titre-prix {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.stars{
+.cardspop .stars{
     color: #0065FC;
     display: flex;
-
+    align-items: center;
+    margin-bottom: 12px;  
+    height: 12px;  
 }
-.starwhite {
-    color: #f2f2f2;
+.greystar {
+    color: #F2F2F2;
 }
 .titre-logo {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 .titre-logo i {
     margin-top: 44px;
@@ -314,16 +330,17 @@ b {
 }
 .bloc1, .bloc2, .bloc3, .bloc4 {
     height: 445px;
-    width: 302px;
+    width: 21.6%;
     margin: 0;
     border-radius: 20px;
-    box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 
 }
 .blocactivités img {
     height: 389px;
-    width: 302px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 .blocactivités h3 {
     width: 247px;
@@ -333,7 +350,7 @@ b {
 /* ////////////////////Footer//////////////////////// */
 .footer {
     margin-left: 48px;
-    width: 1339px;
+    width: 95.6%;
     height: 225px;    
     display: flex;
     justify-content: space-between;
@@ -361,3 +378,8 @@ b {
     margin-top: 45px;
     margin-bottom: 20px;
 }
+
+/* //////////////////////// media queries tablette//////////// */
+
+
+/* /////////////////////////// media queries portable///////// */

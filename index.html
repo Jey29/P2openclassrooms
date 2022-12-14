@@ -19,21 +19,25 @@
   </head>
   <body>
     <!-- ///////////////////////////////En-tête//////////////////////////////////////// -->
-    <section>
-      <div class="container">
-        <header>
-          <div class="left">
-            <img id="logo" src="/composants/Bookibooki.png" alt="Logo Booki" />
+    <header>
+      <nav>
+        <div class="left">
+          <img
+            id="logo"
+            src="/Images Booki/logo/Booki@3x.png"
+            alt="Logo Booki"
+          />
+        </div>
+        <div class="right">
+          <div class="sizeLien">
+            <a id="lienheb" href="#hebpop">Hébergements</a>
           </div>
-          <div class="right">
-            <nav>
-              <a href="#hebergements">Hébergements</a>
-              <a href="#activités">Activités</a>
-            </nav>
+          <div class="navact">
+            <a id="lienact" href="#activités">Activités</a>
           </div>
-        </header>
-      </div>
-    </section>
+        </div>
+      </nav>
+    </header>
     <!-- ///////////////////////////////recherche-filtres-info//////////////////////////////////// -->
     <section>
       <h1 class="phrase1">
@@ -58,20 +62,18 @@
         </div>
       </div>
       <div class="filtres">
-        <h3>Filtres</h3>
+        <h3><b>Filtres</b></h3>
         <div class="boutonfiltres">
           <button>
-            <i class="fa-solid fa-money-bill-wave"></i><b>Économique</b> 
-          </button> 
+            <i class="fa-solid fa-money-bill-wave"></i><b>Économique</b>
+          </button>
           <button>
-            <i class="fa-solid fa-person"></i><b>Familial</b> 
-          </button> 
+            <i class="fa-solid fa-person fa-lg"></i><b>Familial</b>
+          </button>
+          <button><i class="fa-solid fa-heart"></i><b>Romantique</b></button>
           <button>
-            <i class="fa-solid fa-heart"></i><b>Romantique</b> 
-          </button> 
-          <button>
-            <i class="fa-solid fa-dog"></i><b>Animaux autorisés</b> 
-          </button> 
+            <i class="fa-solid fa-dog"></i><b>Animaux autorisés</b>
+          </button>
         </div>
       </div>
       <div class="info">
@@ -85,11 +87,11 @@
     </section>
     <!-- ////////////////////////////////////Hebergements à Marseille//////////////////////// -->
     <main>
-      <section class="hebpop">
+      <section id="hebpop">
         <section class="containerhebergement">
           <h2>Hébergements à Marseille</h2>
-          <div class="box">
-            <div class="box1">
+          <div class="cards">
+            <div class="cards1">
               <div class="photo">
                 <img
                   src="/Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -102,17 +104,15 @@
               <div class="prixnuit">
                 <p>Nuit à partir de 25€</p>
               </div>
-              <div class="stars">
+              <div class="starsheb">
                 <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="greystar fa-solid fa-star fa-xs"></i>
               </div>
             </div>
-            <div class="box2">
+            <div class="cards2">
               <div class="photo">
                 <img
                   src="/Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -125,17 +125,15 @@
               <div class="prixnuit">
                 <p>Nuit à partir de 52€</p>
               </div>
-              <div class="stars">
+              <div class="starsheb">
                 <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="greystar fa-solid fa-star fa-xs"></i>
               </div>
             </div>
-            <div class="box3">
+            <div class="cards3">
               <div class="photo">
                 <img
                   src="/Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -148,17 +146,15 @@
               <div class="prixnuit">
                 <p>Nuit à partir de 76€</p>
               </div>
-              <div class="stars">
+              <div class="starsheb">
                 <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="greystar fa-solid fa-star fa-xs"></i>
               </div>
             </div>
-            <div class="box4">
+            <div class="cards4">
               <div class="photo">
                 <img
                   src="/Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -171,17 +167,15 @@
               <div class="prixnuit">
                 <p>Nuit à partir de 46€</p>
               </div>
-              <div class="stars">
+              <div class="starsheb">
                 <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="greystar fa-solid fa-star fa-xs"></i>
               </div>
             </div>
-            <div class="box5">
+            <div class="cards5">
               <div class="photo">
                 <img
                   src="/Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -194,17 +188,15 @@
               <div class="prixnuit">
                 <p>Nuit à partir de 23€</p>
               </div>
-              <div class="stars">
+              <div class="starsheb">
                 <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="greystar fa-solid fa-star fa-xs"></i>
               </div>
             </div>
-            <div class="box6">
+            <div class="cards6">
               <div class="photo">
                 <img
                   src="/Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -217,19 +209,17 @@
               <div class="prixnuit">
                 <p>Nuit à partir de 96€</p>
               </div>
-              <div class="stars">
+              <div class="starsheb">
                 <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="greystar fa-solid fa-star fa-xs"></i>
               </div>
             </div>
           </div>
           <div class="plus">
-            <p>Afficher plus</p>
+            <p><b>Afficher plus</b></p>
           </div>
         </section>
         <!-- /////////////////////////////////////Les plus populaires/////////////////////// -->
@@ -238,27 +228,27 @@
             <h2>Les plus populaires</h2>
             <i class="fa-solid fa-chart-line fa-lg"></i>
           </div>
-          <div class="boxpop">
-            <div class="boxpop1">
+          <div class="cardspop">
+            <div class="cardspop1">
               <img
                 src="/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 alt=""
               />
               <div class="rightpics">
-                <h3>Hôtel Le soleil du matin</h3>
-                <p>Nuit à partir de 128€</p>
+                <div class="titre-prix">
+                  <h3>Hôtel Le soleil du matin</h3>
+                  <p>Nuit à partir de 128€</p>
+                </div>
                 <div class="stars">
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                  <i class="greystar fa-solid fa-star fa-xs"></i>
                 </div>
               </div>
             </div>
-            <div class="boxpop2">
+            <div class="cardspop2">
               <img
                 src="/Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 alt=""
@@ -271,13 +261,11 @@
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                  <i class="greystar fa-solid fa-star fa-xs"></i>
                 </div>
               </div>
             </div>
-            <div class="boxpop3">
+            <div class="cardspop3">
               <img
                 src="/Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                 alt=""
@@ -290,9 +278,7 @@
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
-                  <div class="starwhite">
-                    <i class="fa-solid fa-star fa-xs"></i>
-                  </div>
+                  <i class="greystar fa-solid fa-star fa-xs"></i>
                 </div>
               </div>
             </div>

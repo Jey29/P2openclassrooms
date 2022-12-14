@@ -1,5 +1,4 @@
-*{
-    margin: 0;
+*{    
     max-width: 1400px;
     margin: 0;  
     padding: 0;      
@@ -187,7 +186,7 @@ main {
 .containerhebergement {
     background-color: #F2F2F2 ; 
     border-radius: 20px;
-    width: 62.85%;
+    width: 880px;
     height: 626px;
 }
 .containerhebergement h2 {
@@ -195,7 +194,7 @@ main {
     padding-top: 42px;
 }
 .cards {
-    margin: 23px 40px 40px 40px;
+    margin: 23px 40px 0px 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;   
@@ -237,7 +236,7 @@ main {
     flex-wrap: wrap;
     align-content: center;
 }
-.plus {
+.plus {    
     font-weight: 700;
     width: 107px;
     height: 21px;
@@ -256,17 +255,15 @@ main {
     border-radius: 20px;
     width: 30%;
     height: 625px;  
-}
-.populaires h2{
-    margin: 41px 96px 0px 37px;
-    width: 205px;
-    size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .cardspop {    
     display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	padding: 26px 40px 34px 37px;
+	justify-content: space-around;	
 }
 .cardspop1, .cardspop2, .cardspop3 {
     width: 100%;
@@ -278,9 +275,7 @@ main {
     display: flex;
 	flex-direction: row;
 }
-
-.populaires .cardspop img {
-    height: 100%;
+.populaires .cardspop img {    
     width: 137px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
@@ -310,12 +305,12 @@ main {
     color: #F2F2F2;
 }
 .titre-logo {
+    margin-top: 41px;
+    margin-bottom: 26px;
+    width: 100%;
     display: flex;
     align-items: center;
-}
-.titre-logo i {
-    margin-top: 44px;
-    margin-right: 42px;
+    justify-content: space-around;    
 }
 /* /////////////////////Activités/////////////////// */
 #activités h2 {
@@ -337,7 +332,7 @@ main {
 
 }
 .blocactivités img {
-    height: 389px;
+    height: 100%;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -380,6 +375,34 @@ main {
 }
 
 /* //////////////////////// media queries tablette//////////// */
-
-
+@media screen and (max-width: 991px) {
+    * {
+        max-width: 1024px;        
+    }
+    .boutonfiltres {
+        width: 82.6%;
+        margin-right: 106px;
+    }
+    #hebpop {
+        height: 957px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;        
+    }
+    .populaires {        
+        height: 278px;
+        width: 883px;
+    }
+    .cardspop {
+        flex-direction: row;        
+        width: 252px;
+    }
+    .bloc1, .bloc2, .bloc3, .bloc4  {
+        height: 267px;
+        width: 182px;
+    }
+}
 /* /////////////////////////// media queries portable///////// */
+@media screen and (max-width: 767px) {
+
+}

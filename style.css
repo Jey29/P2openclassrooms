@@ -12,12 +12,18 @@ i{
 .iblack{
     color: black;
 }
+a:visited{
+    text-decoration: none;
+}
+.cards a, .blocactivités a{
+    display: contents;
+    color: black;
+}
 /* //////////////////////////////Titres/////////////////////////////// */
  h1{
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
-    width: 100%;    
+    line-height: 26px;   
 }
 h2 {
     font-weight: 700;
@@ -116,7 +122,7 @@ input{
     font-size: 18px;
     padding:5px 20px;
 }
-button {
+.bouton button {
     width: 132px;
     height: 49px;
     display: flex;
@@ -129,6 +135,9 @@ button {
     background: #0065FC;
     color: #ffffff;
     font-size: 18px;
+}
+.loupe {
+    display: none;
 }
 /* ////////////////////////////////Filtres//////////////////////////// */
 .filtres {    
@@ -402,6 +411,7 @@ main {
         flex-direction: column;
         justify-content: space-between;        
     }
+/* ////////////////////////Les plus populaires/////////////// */
     .populaires {        
         height: 278px;
         width: 883px;
@@ -422,6 +432,7 @@ main {
     .populaires .cardspop img {
         width: 106px;
     }
+    /* /////////////////////Activités/////////////////// */
     .bloc1, .bloc2, .bloc3, .bloc4  {
         height: 267px;
         width: 182px;
@@ -440,6 +451,7 @@ main {
         height: 38px;
         margin: 9px 36px 11px 19px;
     }
+/* ////////////////////Footer//////////////////////// */
     .footer .ul2 {
         margin-left: 81px;
     }
@@ -454,25 +466,155 @@ main {
     * {
         max-width: 375px;
     }
+/* ////////////////////////////////Logo+menu///////////////////////// */
     nav {
         padding-left: 0;
         height: 129px;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding-top: 21px;        
+        justify-content: center;               
     }
-    .sizeLien {     
-        height: 89px;   
+    #logo {
+        margin-top: 21px;
+    }
+    .right {
+        width: 100%;        
+    }
+    .lienheb, .lienact {
+        display: block;
+        padding-top: 49px;
+    }
+    .sizeLien {             
+        height: 89px;  
+        width: 50%; 
         border-bottom:3px solid #F2F2F2;
     }
     .sizeLien:hover{  
         border-top: none;
         border-bottom: 3px solid #0065fc;   
     }
-   
+/* ////////////////////////////////Searchbar////////////////////// */
     .phrase1 {        
-        width: 298px;
+        width: 78,46%;
         height: 52px;
+        margin: 31px 57px 13px 20px;
+    }
+    
+    .phrase2 {
+        width: 84%;
+        margin: 0px 40px 36px 20px;
+    }
+    .searchbar {
+        width: 100%;
+        margin: 0px 21px 0px 21px;
+    }
+    .loupe {
+        display: block;
+        color: #FFFFFF;
+    }
+    .bouton button {
+        width: 49px;
+    }
+    span {
+        display: none;
+    }
+/* ////////////////////////////////Filtres//////////////////////////// */
+    .filtres {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 153px;
+        margin-left: 20px;
+        margin-top: 34px;
+    }
+    .boutonfiltres {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 117px;
+    }
+    .filtres button {
+        width: 160px;
+        height: 50px;
+    }
+
+/* ////////////////////////////////info///////////////////////////// */
+    .info {
+        margin-left: 20px;
+        align-items: flex-start;
+    }
+/* ////////////////////////Les plus populaires/////////////// */
+    main {
+        margin: 0;
+        width: 100%;
+    }
+    #hebpop{        
+        flex-direction: column-reverse;        
+        height: 1905px;
+    }
+    .populaires {
+        height: 580px;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 0px;
+    }
+    .titre-logo {
+        padding-left: 20px;
+        padding-right: 21px;
+        margin-top: 28px;
+    }
+    .cardspop {
+        flex-direction: column;       
+        align-items: center;     
+    }
+    .cardspop1, .cardspop2, .cardspop3 {
+        width: 343px;
+        margin-bottom: 10px;
+    }
+    .populaires .cardspop img {
+        width: 137px;
+    }
+/* ////////////////////////////////hebergements////////////////// */
+    .containerhebergement {
+        height: auto;
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 0px;
+    }
+    .containerhebergement h2 {
+        padding-left: 20px;    
+        padding-top: 26px;
+    }
+    .cards {
+        margin: 19px 20px 0px 20px;
+    }
+    .cards1, .cards2, .cards3, .cards4, .cards5, .cards6 {
+        width: 335px;
+        height: 199px;
+        margin-bottom: 12px;
+    }
+/* /////////////////////Activités/////////////////// */
+    .blocactivités {
+        flex-direction: column;
+        height: auto;
+    }
+    .bloc1, .bloc2, .bloc3, .bloc4 {
+        height: 190px;
+        width: 334px;
+    }
+/* ////////////////////Footer//////////////////////// */
+    .footer {
+        margin: 80px 0px 0px 0px;
+        flex-direction: column;
+        height: 501px;
+        width: 377px;
+    }
+    .footer .ul1 {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .footer .ul2, .footer .ul3 {
+        margin-left: 33px;
+        margin-right: 0px;
     }
 }

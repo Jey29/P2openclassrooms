@@ -405,7 +405,11 @@ main {
         width: 82.6%;
         margin-right: 106px;
     }
+    main {
+        margin: 0;
+    }
     #hebpop {
+        margin-left: 50px;
         height: 957px;
         display: flex;
         flex-direction: column;
@@ -433,6 +437,10 @@ main {
         width: 106px;
     }
     /* /////////////////////Activités/////////////////// */
+    #activités {
+        margin-left: 73px;
+        margin-right: 73px;
+    }
     .bloc1, .bloc2, .bloc3, .bloc4  {
         height: 267px;
         width: 182px;
@@ -494,8 +502,12 @@ main {
         border-bottom: 3px solid #0065fc;   
     }
 /* ////////////////////////////////Searchbar////////////////////// */
+    .underheader {
+        height: 473px;
+        padding-right: 21px;
+    }
     .phrase1 {        
-        width: 78,46%;
+        width: 298px;
         height: 52px;
         margin: 31px 57px 13px 20px;
     }
@@ -525,17 +537,35 @@ main {
         height: 153px;
         margin-left: 20px;
         margin-top: 34px;
+        margin-right: 21px;
     }
     .boutonfiltres {
         flex-wrap: wrap;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: space-between;
-        width: 100%;
-        height: 117px;
+        width: auto;
+        height: 117px;  
+        margin-right: 21px;      
     }
     .filtres button {
         width: 160px;
         height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;             
+        padding-left: 13px;  
+    }
+    button b {
+        width: 67px;
+        height: 13px;
+        font-size: 11px;        
+    }
+    .boutonfiltres button i {
+        margin-right: 5px;
+    }
+    .boutonfiltres button b {
+        width: 98px;
     }
 
 /* ////////////////////////////////info///////////////////////////// */
@@ -548,8 +578,10 @@ main {
         margin: 0;
         width: 100%;
     }
-    #hebpop{        
-        flex-direction: column-reverse;        
+    #hebpop{  
+        margin: 0;      
+        flex-direction: column-reverse;  
+        justify-content: space-around;      
         height: 1905px;
     }
     .populaires {
@@ -574,6 +606,9 @@ main {
     .populaires .cardspop img {
         width: 137px;
     }
+    .titre-prix h3 {
+        width: 82%;
+    }
 /* ////////////////////////////////hebergements////////////////// */
     .containerhebergement {
         height: auto;
@@ -593,14 +628,30 @@ main {
         height: 199px;
         margin-bottom: 12px;
     }
+    .plus {
+        display: none;
+    }
 /* /////////////////////Activités/////////////////// */
     .blocactivités {
         flex-direction: column;
-        height: auto;
+        height: 832px;
+        margin-left: 19px;
+        margin-right: 22px;
     }
     .bloc1, .bloc2, .bloc3, .bloc4 {
         height: 190px;
         width: 334px;
+    }
+    .blocactivités img {
+        height: 134px;
+    }
+    #activités {
+        margin: 0px;
+    }
+    #activités h2 {
+        height: 30px;
+        width: 212px;
+        margin: 105px 141px 24px 22px;
     }
 /* ////////////////////Footer//////////////////////// */
     .footer {
